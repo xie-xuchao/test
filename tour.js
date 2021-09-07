@@ -43,7 +43,7 @@ const headers = {
 			headers: headers,
 			body: body
 			};
-		 $task.fetch(myRequest_damai).then(response => {
+		 $task.fetch(myRequest).then(response => {
 			console.log(response.statusCode + "\n\n" + response.body);
 			$done();
 		}, reason => {
@@ -53,6 +53,7 @@ const headers = {
 		sleep(15000);
 		}
 　	};
+
 
 function sleep(milliSeconds){
 	var startTime = new Date().getTime(); 
