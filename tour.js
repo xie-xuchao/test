@@ -54,13 +54,13 @@ const headers = {
 		}
 　	};
 
-
 function sleep(milliSeconds){
 	var startTime = new Date().getTime(); 
 	var stayTime = milliSeconds/1000;
 	var log_desc = "延迟 " + stayTime + "秒"
+	console.log(log_desc);
         while (new Date().getTime() < startTime + milliSeconds) {
-            console.log(log_desc);
+            null;
         }//暂停一段时间 10000=1S。
+		
   }
-
