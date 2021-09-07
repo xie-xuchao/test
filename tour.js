@@ -3,7 +3,7 @@
  * @fileoverview Template to compose HTTP reqeuest.
  * 
  */
-
+var $sleep = sleep();
 const url_damai = `https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1630969037305&ptag=7155.9.47&strBuildIndex=shop&dwIsFree=0&ddwConsumeCoin=23530&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=20210907065717305%3B6643784587768162%3B10032%3Btk01w70cc1ae930nRh457OXwIfBGBmGZDhR78XxROzOpcDYb1M6AFoD0wdTKlMNJxl%2F5F5f90Sgu4HLdgz5h2bTn83Zx%3Bea6fd66485f39db52e256dffd1162eba98260f2e4f26f4ff0295f1d62537822e&_=1630969037307&sceneval=2&g_login_type=1&callback=jsonpCBKN&g_ty=ls`;
 const method = `GET`;
 const headers_damai = {
@@ -68,7 +68,7 @@ const myRequest_mianmian = {
 };
 
 //等待80秒
-    sleep(80000);
+    $sleep(80000);
 $task.fetch(myRequest_damai).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
     $done();
@@ -77,7 +77,7 @@ $task.fetch(myRequest_damai).then(response => {
     $done();
 });
 
-sleep(15000);
+$sleep(15000);
 $task.fetch(url_shizai).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
     $done();
@@ -85,7 +85,7 @@ $task.fetch(url_shizai).then(response => {
     console.log(reason.error);
     $done();
 });
-sleep(15000);
+$sleep(15000);
 
 $task.fetch(url_mianmian).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
@@ -94,7 +94,7 @@ $task.fetch(url_mianmian).then(response => {
     console.log(reason.error);
     $done();
 });
-sleep(15000);
+$sleep(15000);
 
 
 function sleep(milliSeconds) {
