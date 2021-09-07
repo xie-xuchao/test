@@ -68,7 +68,7 @@ const myRequest_mianmian = {
 };
 
 //等待80秒
-    $sleep(80000);
+    $.sleep(80000);
 $task.fetch(myRequest_damai).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
     $done();
@@ -77,7 +77,7 @@ $task.fetch(myRequest_damai).then(response => {
     $done();
 });
 
-$sleep(15000);
+$sleep.sleep(15000);
 $task.fetch(url_shizai).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
     $done();
@@ -85,7 +85,7 @@ $task.fetch(url_shizai).then(response => {
     console.log(reason.error);
     $done();
 });
-$sleep(15000);
+$sleep.sleep(15000);
 
 $task.fetch(url_mianmian).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
@@ -94,12 +94,14 @@ $task.fetch(url_mianmian).then(response => {
     console.log(reason.error);
     $done();
 });
-$sleep(15000);
+$sleep.sleep(15000);
 
 
-function sleep(milliSeconds) {
-        var startTime = new Date().getTime();
+function sleep() {
+	const startTime = new Date().getTime();
+	const sleep = (milliSeconds) => {        
         while (new Date().getTime() < startTime + milliSeconds) {
             console.log(new Date().getTime());
         }//暂停一段时间 10000=1S。
     }
+}
