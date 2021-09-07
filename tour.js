@@ -98,7 +98,7 @@ $sleep(15000);
 
 
 function sleep(milliSeconds) {
-        let startTime = new Date().getTime();
+        var startTime = new Date().getTime();
         while (new Date().getTime() < startTime + milliSeconds) {
             console.log(new Date().getTime());
         }//暂停一段时间 10000=1S。
