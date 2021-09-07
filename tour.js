@@ -35,10 +35,10 @@ const headers = {
 	
 	for(var i=0;i<url_list.length;i++){
 
-　　　　for(var key in jsonList[i]){
+　　　　for(var key in url_list[i]){
 		console.log("请导游："+ key);
 		const myRequest = {
-			url: jsonList[i][key],
+			url: url_list[i][key],
 			method: method,
 			headers: headers,
 			body: body
