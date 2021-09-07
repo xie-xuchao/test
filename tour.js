@@ -67,8 +67,8 @@ const myRequest_mianmian = {
     body: body
 };
 
-//等待80秒
-    $.sleep(80000);
+//
+//    $.sleep(80000);
 $task.fetch(myRequest_damai).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
     $done();
@@ -77,7 +77,7 @@ $task.fetch(myRequest_damai).then(response => {
     $done();
 });
 
-$sleep.sleep(15000);
+//$sleep.sleep(15000);
 $task.fetch(url_shizai).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
     $done();
@@ -85,7 +85,7 @@ $task.fetch(url_shizai).then(response => {
     console.log(reason.error);
     $done();
 });
-$sleep.sleep(15000);
+//$sleep.sleep(15000);
 
 $task.fetch(url_mianmian).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
@@ -94,7 +94,7 @@ $task.fetch(url_mianmian).then(response => {
     console.log(reason.error);
     $done();
 });
-$sleep.sleep(15000);
+//$sleep.sleep(15000);
 
 
 function sleep() {
