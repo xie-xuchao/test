@@ -6,10 +6,10 @@
 // var $sleep = sleep();
 
 const url_list = [
-	{"name":"damai", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1631025566636&ptag=7155.9.47&strBuildIndex=food&dwIsFree=0&ddwConsumeCoin=22435&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=20210907223926637%3B6643784587768162%3B10032%3Btk01w70cc1ae930nRh457OXwIfBGBmGZDhR78XxROzOpcDYb1M6AFoD0wdTKlMNJxl%2F5F5f90Sgu4HLdgz5h2bTn83Zx%3B3216d8bc70792f7a361de7a5dae7fc6433372dc3c11a8d4e94b2e9a29ff9c4ae&_=1631025566639&sceneval=2&g_login_type=1&callback=jsonpCBKBB&g_ty=ls"},
-	{"name":"shizai", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1631025568147&ptag=7155.9.47&strBuildIndex=shop&dwIsFree=0&ddwConsumeCoin=24104&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=20210907223928147%3B6643784587768162%3B10032%3Btk01w70cc1ae930nRh457OXwIfBGBmGZDhR78XxROzOpcDYb1M6AFoD0wdTKlMNJxl%2F5F5f90Sgu4HLdgz5h2bTn83Zx%3Be54e1217a0621aec330f06e3bca144259a5b7d28dffe5b592757abde5fccbe3f&_=1631025568149&sceneval=2&g_login_type=1&callback=jsonpCBKEE&g_ty=ls"},
-	{"name":"mianmian", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1630917129909&ptag=7155.9.47&strBuildIndex=sea&dwIsFree=0&ddwConsumeCoin=25670&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=20210906163209910%3B6643784587768162%3B10032%3Btk01wcf5e1d6830nkvPoW02mjwWkRhH%2BGQcgoi5wg5dwZ7dbX3OAK2mzlxuiEq2Ya4ZyBjgNTQV3tlFixW1zyzzJqRn%2B%3B92d1750c12cc117a894e46a3b243f8680acde42d4ae1ae19dabfb5998fbc9f39&_=1630917129911&sceneval=2&g_login_type=1&callback=jsonpCBKL&g_ty=ls"},
-	//{"name":"ale", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1631010019140&ptag=7155.9.47&strBuildIndex=fun&dwIsFree=0&ddwConsumeCoin=20661&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=20210907182019140%3B6643784587768162%3B10032%3Btk01w70cc1ae930nRh457OXwIfBGBmGZDhR78XxROzOpcDYb1M6AFoD0wdTKlMNJxl%2F5F5f90Sgu4HLdgz5h2bTn83Zx%3Ba4c96180539b809a881ff65feda2f3cd748726538476db05b770a0a68e5f4365&_=1631010019142&sceneval=2&g_login_type=1&callback=jsonpCBKP&g_ty=ls"}
+	//{"name":"大麦", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1630969037305&ptag=7155.9.47&strBuildIndex=shop&dwIsFree=0&ddwConsumeCoin=23530&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=${decrypt(Date.now(), '', '', url)}&_=${Date.now() + 2}&sceneval=2&g_login_type=1&g_ty=ls"},
+	{"name":"食仔", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=${Date.now()}&ptag=7155.9.47&strBuildIndex=food&dwIsFree=0&ddwConsumeCoin=21913&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=${decrypt(Date.now(), '', '', url)}&_=${Date.now() + 2}&sceneval=2&g_login_type=1&g_ty=ls"},
+	{"name":"眠眠", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=${Date.now()}&ptag=7155.9.47&strBuildIndex=sea&dwIsFree=0&ddwConsumeCoin=25670&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=${decrypt(Date.now(), '', '', url)}&_=${Date.now() + 2}&sceneval=2&g_login_type=1&g_ty=ls"},
+	{"name":"阿乐", "url": "https://m.jingxi.com/jxbfd/user/EmployTourGuide?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=${Date.now()}&ptag=7155.9.47&strBuildIndex=fun&dwIsFree=0&ddwConsumeCoin=20661&_stk=_cfd_t%2CbizCode%2CddwConsumeCoin%2CdwEnv%2CdwIsFree%2Cptag%2Csource%2CstrBuildIndex%2CstrZone&_ste=1&h5st=${decrypt(Date.now(), '', '', url)}&_=${Date.now() + 2}&sceneval=2&g_login_type=1&g_ty=ls"}
 ];
 
 const cookie_list = [
@@ -32,7 +32,7 @@ const headers = {
 
 
 //等待60秒
-    sleep(60000);
+    sleep(2000);
 	
 	for(var i=0;i<url_list.length;i++){
 
@@ -50,7 +50,7 @@ const headers = {
 			console.log(reason.error);
 			$done();
 		});
-		sleep(15000);
+		sleep(3000);
 		
 　　　　/*for(var key in url_list[i]){
 		}*/
