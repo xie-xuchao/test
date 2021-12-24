@@ -4,5 +4,5 @@ let obj = JSON.parse($response.body);
 if(obj){
 	obj.hongbao[0]["dwState"] = "0";
 	}
-	
-$done({body:JSON.stringify(obj)});
+obj.data.hongbao[0]["dwState"] = "0";
+$done({body: JSON.stringify(obj)});
