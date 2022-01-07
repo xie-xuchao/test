@@ -1,8 +1,20 @@
 
-let obj = JSON.parse($response.body);
-/*$notify("test", "test", "test"); */
-if(obj){
-	obj.hongbao[0]["dwState"] = "0";
-	}
-obj.data.hongbao[0]["dwState"] = "0";
-$done({body: JSON.stringify(obj)});
+// let obj = JSON.parse($response.body);
+// /*$notify("test", "test", "test"); */
+// if(obj){
+// 	obj.hongbao[0]["dwState"] = "0";
+// 	}
+// obj.data.hongbao[0]["dwState"] = "0";
+// $done({body: JSON.stringify(obj)});
+
+var body = $response.body;
+var obj = JSON.parse(body);
+
+console.log(body);
+
+obj['result'] = 0;
+body = JSON.stringify(obj);
+
+console.log(body);
+
+$done(body);
