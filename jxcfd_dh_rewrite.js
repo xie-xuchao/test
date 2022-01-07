@@ -10,6 +10,8 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
+$notify("Title", "Subtitle", body); 
+
 console.log(body);
 
 obj['result'] = 0;
