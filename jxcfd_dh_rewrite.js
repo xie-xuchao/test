@@ -10,13 +10,14 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-$notify("Title", "Subtitle", body); 
+//$notify("Title", "Subtitle", body); 
 
 console.log(body);
 
-obj['result'] = 0;
+//obj['result'] = 0;
+obj.hongbao[1].dwState='0';
 body = JSON.stringify(obj);
 
-console.log(body);
+//console.log(body);
 
 $done(body);
