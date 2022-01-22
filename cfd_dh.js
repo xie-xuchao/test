@@ -12,6 +12,7 @@ import sendNotify
 from ql_util import get_random_str
 from ql_api import get_envs, disable_env, post_envs, put_envs
 
+# 需配置环境变量 CFD_COOKIE ，来获取哪些cookie需要兑换财富岛100
 # const notify = $.isNode() ? require('./sendNotify') : '';
 # 默认配置(看不懂代码也勿动)
 cfd_start_time = -0.15
